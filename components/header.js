@@ -2,7 +2,7 @@ class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML=`<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html">ME</a>
+        <a class="navbar-brand" href="index.html">PS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,10 +15,10 @@ class Header extends HTMLElement {
               <a class="nav-link" href="about.html">ABOUT ME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">BLOGS</a>
+              <a class="nav-link" href="blogs.html">BLOGS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT ME</a>
+              <a class="nav-link" href="contact.html">CONTACT ME</a>
             </li>
           </ul>
         </div>

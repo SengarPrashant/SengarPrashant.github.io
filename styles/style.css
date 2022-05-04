@@ -1,17 +1,22 @@
 :root{
   --bggreen:#1abc9c;
+  --bggreenlight:#37bfa4;
   --bglight:whitesmoke;
+  --bgblack:rgba(0,0,0,.9);
+  
 }
 body {
-    font: 20px Montserrat, sans-serif;
+    font: 13px Montserrat, sans-serif;
     line-height: 1.8;
-    color: #f5f6f7;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  p {font-size: 14px;margin: 0;}
+  p {font-size: 13px;margin: 0;}
+  .bg-light-green{
+    background-color: var(--bggreenlight);
+  }
   .bg-1 { 
     background-color: #1abc9c; /* Green */
     color: #ffffff;
@@ -28,10 +33,10 @@ body {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
   }
-  .container-fluid {
+  /* .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
-  }
+  } */
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -39,14 +44,14 @@ body {
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
   }
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
 
   .btn-primary{
-      background-color: #333;
+      background-color: rgba(0,0,0,.9);
       border: none;
   }
   .btn-primary:hover{
@@ -63,11 +68,16 @@ body {
   .vh-80{
     height: 80vh;
   }
+  .contentHeight{
+    height:calc(100vh - 140.2px);
+    /* min-height: 900px; */
+  }
 
   .footer {
-    background-color:rgb(86, 86, 86);
+    background-color:var(--bgblack);
     width: 100%;
     padding: 20px 40px;
+    color: var(--bglight);
   } 
 
   .navbar-toggler:focus,
@@ -76,4 +86,7 @@ body {
       outline: none;
       box-shadow: none;
       background-color: var(--bglight);
+  }
+  .justify:not(.notjustify){
+    text-align: justify;
   }
