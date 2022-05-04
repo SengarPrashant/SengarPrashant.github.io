@@ -87,6 +87,6 @@ body {
       box-shadow: none;
       background-color: var(--bglight);
   }
-  .justify:not(.notjustify){
+  .justify :not(.notjustify){
     text-align: justify;
   }
