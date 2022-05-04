@@ -70,7 +70,7 @@ body {
   }
   .contentHeight{
     height:calc(100vh - 140.2px);
-    /* min-height: 900px; */
+    margin-top: 76px;
   }
 
   .footer {
