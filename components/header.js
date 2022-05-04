@@ -1,27 +1,29 @@
 class Header extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `
-      <nav class="navbar navbar-default">
+      this.innerHTML=`<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="index.html">Me</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT ME</a></li>
-            <li><a href="blogs.html">BLOGS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+        <a class="navbar-brand" href="index.html">ME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOGS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT ME</a>
+            </li>
           </ul>
         </div>
       </div>
-    </nav>
-      `;
+    </nav>`;
     }
 }
 
