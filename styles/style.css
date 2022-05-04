@@ -71,6 +71,7 @@ body {
   .contentHeight{
     height:calc(100vh - 140.2px);
     margin-top: 76px;
+    min-height:400px;
   }
 
   .footer {
@@ -89,4 +90,9 @@ body {
   }
   .justify :not(.notjustify){
     text-align: justify;
+  }
+
+  .contactIcon{
+    width: 30px;
+    height: 30px;
   }

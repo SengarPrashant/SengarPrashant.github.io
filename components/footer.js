@@ -3,7 +3,7 @@ class Footer extends HTMLElement {
       this.innerHTML = `    
         <footer class="footer">            
         <p>All rights reserve to @Prashant Singh Sengar.</p>
-        </footer>  
+        </footer>
       `;
     }
   }
