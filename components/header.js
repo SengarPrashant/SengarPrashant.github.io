@@ -1,5 +1,6 @@
 class Header extends HTMLElement {
     connectedCallback() {
+      const page=this.attributes.page.value
       this.innerHTML=`<nav style="border-bottom:1px solid lightgray;" 
       class="navbar navbar-expand-lg shadow-sm fixed-top navbar-light bg-light">
       <div class="container">
@@ -10,16 +11,16 @@ class Header extends HTMLElement {
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+              <a class="nav-link ${page==='home' ? 'active' :''}" aria-current="page" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT ME</a>
+              <a class="nav-link ${page==='about' ? 'active' :''}"" href="about.html">ABOUT ME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blogs.html">BLOGS</a>
+              <a class="nav-link ${page==='blogs' ? 'active' :''}"" href="blogs.html">BLOGS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT ME</a>
+              <a class="nav-link ${page==='contact' ? 'active' :''}"" href="contact.html">CONTACT ME</a>
             </li>
           </ul>
         </div>
