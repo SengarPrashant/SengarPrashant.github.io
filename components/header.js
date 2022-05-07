@@ -30,3 +30,16 @@ class Header extends HTMLElement {
 }
 
 customElements.define('main-header', Header);
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  updateTheme();
+});
+
+const updateTheme=()=>{
+  var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  var day = days[(new Date()).getDay()];
+  const ele=document.querySelector('.bg-1');
+  ele.classList.remove('bg-1');
+  ele.classList.add(`bg${day}`);
+}
+

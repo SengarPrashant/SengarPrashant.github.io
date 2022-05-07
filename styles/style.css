@@ -3,7 +3,13 @@
   --bggreenlight:#37bfa4;
   --bglight:whitesmoke;
   --bgblack:rgba(0,0,0,.9);
-  
+  --bgMon:#1abc9c;
+  --bgTue:#8b3737;
+  --bgWed:#8d8a77;
+  --bgThu:#3d3a7c;
+  --bgFri:#bb931a;
+  --bgSat:#41464b;
+  --bgSun:#b9794d;
 }
 body {
     font: 13px Montserrat, sans-serif;
@@ -12,13 +18,43 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  .bgMon{
+    background-color: var(--bgMon);
+    color: #ffffff;
+  }
+  .bgTue{
+    background-color: var(--bgTue);
+    color: #ffffff;
+  }
+  .bgWed{
+    background-color: var(--bgWed);
+    color: #ffffff;
+  }
+  .bgThu{
+    background-color: var(--bgThu);
+    color: #ffffff;
+  }
+  .bgFri{
+    background-color: var(--bgFri);
+    color: #ffffff;
+  }
+  .bgSat{
+    background-color: var(--bgSat);
+    color: #ffffff;
+  }
+  .bgSun{
+    background-color: var(--bgSun);
+    color: #ffffff;
+  }
+
   
   p {font-size: 13px;margin: 0;}
   .bg-light-green{
     background-color: var(--bggreenlight);
   }
   .bg-1 { 
-    background-color: #1abc9c; /* Green */
+    background-color: var(--bggreen); /* Green */
     color: #ffffff;
   }
   .bg-2 { 
@@ -47,7 +83,7 @@ body {
     letter-spacing: 3px;
   }
   .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: var(--bgblack) !important;
   }
 
   .btn-primary{
